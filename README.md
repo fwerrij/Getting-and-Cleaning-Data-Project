@@ -12,9 +12,10 @@ and summarize_each verbs from the dplyr library.
 I have just one script with al steps in it. The script with explanatory comments is fully included:
 
 ## Preparation
-###Setting/creating the workdirectory
+*Setting/creating the workdirectory
 	setwd("C:/Users/nl22423/Documents/Cursussen/G&CData/Project")
-###Downloading & unzipping of the data is done manually in the windows GUI maintaining the directory structure in zip-file
+*Downloading & unzipping of the data is done manually in the windows GUI maintaining the directory structure in zip-file
+## Data manipulation
 ###sucessively reading data into dataframes for test and train data
 	try_test<-read.table("./UCI HAR Dataset/test/X_test.txt")
 	subject_test<-read.table("./UCI HAR Dataset/test/subject_test.txt")
@@ -22,7 +23,7 @@ I have just one script with al steps in it. The script with explanatory comments
 	try_train<-read.table("./UCI HAR Dataset/train/X_train.txt")
 	subject_train<-read.table("./UCI HAR Dataset/train/subject_train.txt")
 	y_train<-read.table("./UCI HAR Dataset/train/y_train.txt")
-##read activity names and feature names into dataframes, assign the feature names to variables in both test and train
+###read activity names and feature names into dataframes, assign the feature names to variables in both test and train
 ###establish the indices of the mean and std of the measurements for testdata in order to (some feature names have "Mean"starting with a capital letter: Because they are not proper means I wil not take them into account!!!) select only the features with mean and std of features from test an train data
 	features<-read.table("./UCI HAR Dataset/features.txt")
 	activities<-read.table("./UCI HAR Dataset/activity_labels.txt")
