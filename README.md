@@ -57,7 +57,11 @@ I have just one script with all steps in it. The script with explanatory comment
 	write.table(tidy_result,file="tidy_result.txt",row.name=FALSE)
 # CodeBook
 For each real number variable 30 x 6 observations are included containing the mean per combination of subject (30) and activity (6).
-
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 |Variable Name		|Description		|Value Type
 |"subject" 		|			|Integer 1-30
 |"activity" 		|			|{"LAYING","sITTING","STANDING","WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS"} 
