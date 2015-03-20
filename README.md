@@ -61,7 +61,7 @@ For each real number variable 30 x 6 observations are included containing the me
 * Variable Name		Description		Value Type
 * "subject" 					Integer 1-30
 * "activity" 					{"LAYING","sITTING","STANDING","WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS"} 
-"tBodyAcc-mean()-X" 				REAL NUMBER <-1,+1>
+* "tBodyAcc-mean()-X" 				REAL NUMBER <-1,+1>
 "tBodyAcc-mean()-Y" 				REAL NUMBER <-1,+1>
 "tBodyAcc-mean()-Z" 				REAL NUMBER <-1,+1>
 "tBodyAcc-std()-X" 				REAL NUMBER <-1,+1>
