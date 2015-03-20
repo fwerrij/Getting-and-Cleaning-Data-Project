@@ -13,7 +13,7 @@ I have just one script with al steps in it. The script with explanatory comments
 
 ## Preparation
 * Setting/creating the workdirectory
-	setwd("C:/Users/nl22423/Documents/Cursussen/G&CData/Project")
+setwd("C:/Users/nl22423/Documents/Cursussen/G&CData/Project")
 * Downloading & unzipping of the data is done manually in the windows GUI maintaining the directory structure in zip-file
 ## Data manipulation
 ###sucessively reading data into dataframes for test and train data
