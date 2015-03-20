@@ -55,3 +55,88 @@ I have just one script with all steps in it. The script with explanatory comment
 	tidy_result<-summarise_each(grouped_result,"mean")
 ##Write the tidy table into tidy_result.txt in the Working directory:
 	write.table(tidy_result,file="tidy_result.txt",row.name=FALSE)
+# CodeBook
+For each real number variable 30 x 6 observations are included containing the mean per combination of subject (30) and activity (6).
+
+Variable Name		Description		Value Type
+"subject" 					Integer 1-30
+"activity" 					{"LAYING","sITTING","STANDING","WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS"} 
+"tBodyAcc-mean()-X" 				REAL NUMBER <-1,+1>
+"tBodyAcc-mean()-Y" 				REAL NUMBER <-1,+1>
+"tBodyAcc-mean()-Z" 				REAL NUMBER <-1,+1>
+"tBodyAcc-std()-X" 				REAL NUMBER <-1,+1>
+"tBodyAcc-std()-Y" 				REAL NUMBER <-1,+1>
+"tBodyAcc-std()-Z" 				REAL NUMBER <-1,+1>
+"tGravityAcc-mean()-X" 				REAL NUMBER <-1,+1>
+"tGravityAcc-mean()-Y" 				REAL NUMBER <-1,+1>
+"tGravityAcc-mean()-Z" 				REAL NUMBER <-1,+1>
+"tGravityAcc-std()-X" 				REAL NUMBER <-1,+1>
+"tGravityAcc-std()-Y" 				REAL NUMBER <-1,+1>
+"tGravityAcc-std()-Z" 				REAL NUMBER <-1,+1>
+"tBodyAccJerk-mean()-X" 			REAL NUMBER <-1,+1>
+"tBodyAccJerk-mean()-Y"  			REAL NUMBER <-1,+1>
+"tBodyAccJerk-mean()-Z"  			REAL NUMBER <-1,+1>
+"tBodyAccJerk-std()-X"  			REAL NUMBER <-1,+1>
+"tBodyAccJerk-std()-Y"  			REAL NUMBER <-1,+1>
+"tBodyAccJerk-std()-Z"  			REAL NUMBER <-1,+1>
+"tBodyGyro-mean()-X"  				REAL NUMBER <-1,+1>
+"tBodyGyro-mean()-Y"  				REAL NUMBER <-1,+1>
+"tBodyGyro-mean()-Z" 	 			REAL NUMBER <-1,+1>
+"tBodyGyro-std()-X" 	 			REAL NUMBER <-1,+1>
+"tBodyGyro-std()-Y" 	 			REAL NUMBER <-1,+1>
+"tBodyGyro-std()-Z"  				REAL NUMBER <-1,+1>
+"tBodyGyroJerk-mean()-X"  			REAL NUMBER <-1,+1>
+"tBodyGyroJerk-mean()-Y"  			REAL NUMBER <-1,+1>
+"tBodyGyroJerk-mean()-Z"  			REAL NUMBER <-1,+1>
+"tBodyGyroJerk-std()-X"  			REAL NUMBER <-1,+1>
+"tBodyGyroJerk-std()-Y"  			REAL NUMBER <-1,+1>
+"tBodyGyroJerk-std()-Z"  			REAL NUMBER <-1,+1>
+"tBodyAccMag-mean()"  				REAL NUMBER <-1,+1>
+"tBodyAccMag-std()"  				REAL NUMBER <-1,+1>
+"tGravityAccMag-mean()"  			REAL NUMBER <-1,+1>
+"tGravityAccMag-std()"  			REAL NUMBER <-1,+1>
+"tBodyAccJerkMag-mean()"  			REAL NUMBER <-1,+1>
+"tBodyAccJerkMag-std()"  			REAL NUMBER <-1,+1>
+"tBodyGyroMag-mean()"  				REAL NUMBER <-1,+1>
+"tBodyGyroMag-std()" 	 			REAL NUMBER <-1,+1>
+"tBodyGyroJerkMag-mean()" 	 		REAL NUMBER <-1,+1>
+"tBodyGyroJerkMag-std()"  			REAL NUMBER <-1,+1>
+"fBodyAcc-mean()-X" 	 			REAL NUMBER <-1,+1>
+"fBodyAcc-mean()-Y" 	 			REAL NUMBER <-1,+1>
+"fBodyAcc-mean()-Z" 	 			REAL NUMBER <-1,+1>
+"fBodyAcc-std()-X" 	 			REAL NUMBER <-1,+1>
+"fBodyAcc-std()-Y" 	 			REAL NUMBER <-1,+1>
+"fBodyAcc-std()-Z" 	 			REAL NUMBER <-1,+1>
+"fBodyAcc-meanFreq()-X"  			REAL NUMBER <-1,+1>
+"fBodyAcc-meanFreq()-Y"  			REAL NUMBER <-1,+1>
+"fBodyAcc-meanFreq()-Z"  			REAL NUMBER <-1,+1>
+"fBodyAccJerk-mean()-X"  			REAL NUMBER <-1,+1>
+"fBodyAccJerk-mean()-Y"  			REAL NUMBER <-1,+1>
+"fBodyAccJerk-mean()-Z"  			REAL NUMBER <-1,+1>
+"fBodyAccJerk-std()-X"  			REAL NUMBER <-1,+1>
+"fBodyAccJerk-std()-Y"  			REAL NUMBER <-1,+1>
+"fBodyAccJerk-std()-Z"  			REAL NUMBER <-1,+1>
+"fBodyAccJerk-meanFreq()-X"  			REAL NUMBER <-1,+1>
+"fBodyAccJerk-meanFreq()-Y"  			REAL NUMBER <-1,+1>
+"fBodyAccJerk-meanFreq()-Z"  			REAL NUMBER <-1,+1>
+"fBodyGyro-mean()-X" 				REAL NUMBER <-1,+1> 
+"fBodyGyro-mean()-Y"  				REAL NUMBER <-1,+1>
+"fBodyGyro-mean()-Z" 	 			REAL NUMBER <-1,+1>
+"fBodyGyro-std()-X" 	 			REAL NUMBER <-1,+1>
+"fBodyGyro-std()-Y"  				REAL NUMBER <-1,+1>
+"fBodyGyro-std()-Z"  				REAL NUMBER <-1,+1>
+"fBodyGyro-meanFreq()-X"  			REAL NUMBER <-1,+1>
+"fBodyGyro-meanFreq()-Y"  			REAL NUMBER <-1,+1>
+"fBodyGyro-meanFreq()-Z"  			REAL NUMBER <-1,+1>
+"fBodyAccMag-mean()"  				REAL NUMBER <-1,+1>
+"fBodyAccMag-std()" 	 			REAL NUMBER <-1,+1>
+"fBodyAccMag-meanFreq()" 			REAL NUMBER <-1,+1>
+"fBodyBodyAccJerkMag-mean()"  			REAL NUMBER <-1,+1>
+"fBodyBodyAccJerkMag-std()"  			REAL NUMBER <-1,+1>
+"fBodyBodyAccJerkMag-meanFreq()" 		REAL NUMBER <-1,+1> 
+"fBodyBodyGyroMag-mean()"  			REAL NUMBER <-1,+1>
+"fBodyBodyGyroMag-std()"  			REAL NUMBER <-1,+1>
+"fBodyBodyGyroMag-meanFreq()"  			REAL NUMBER <-1,+1>
+"fBodyBodyGyroJerkMag-mean()"  			REAL NUMBER <-1,+1>
+"fBodyBodyGyroJerkMag-std()"  			REAL NUMBER <-1,+1>
+"fBodyBodyGyroJerkMag-meanFreq()" 		REAL NUMBER <-1,+1>
