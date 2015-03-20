@@ -9,7 +9,7 @@ the 7352x81 train table by adding the subject and activity colummns (after repla
 Finally I join test an train tables vertically and calculate de means of all remaining measurements per subject and activity combination, using the group_by 
 and summarize_each verbs from the dplyr library.
 
-I have just one script with al steps in it. The script with explanatory comments is fully included:
+I have just one script with all steps in it. The script with explanatory comments is fully included:
 
 ## Preparation
 ####Setting/creating the workdirectory:
