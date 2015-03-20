@@ -58,9 +58,9 @@ I have just one script with all steps in it. The script with explanatory comment
 # CodeBook
 For each real number variable 30 x 6 observations are included containing the mean per combination of subject (30) and activity (6).
 
-Variable Name		Description		Value Type
-"subject" 					Integer 1-30
-"activity" 					{"LAYING","sITTING","STANDING","WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS"} 
+* Variable Name		Description		Value Type
+* "subject" 					Integer 1-30
+* "activity" 					{"LAYING","sITTING","STANDING","WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS"} 
 "tBodyAcc-mean()-X" 				REAL NUMBER <-1,+1>
 "tBodyAcc-mean()-Y" 				REAL NUMBER <-1,+1>
 "tBodyAcc-mean()-Z" 				REAL NUMBER <-1,+1>
