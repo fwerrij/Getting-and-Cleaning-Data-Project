@@ -58,86 +58,86 @@ I have just one script with all steps in it. The script with explanatory comment
 # CodeBook
 For each real number variable 30 x 6 observations are included containing the mean per combination of subject (30) and activity (6).
 
-| Variable Name	| Description   | Value Type  |
-| ------------- |:-------------|:-----|
+|Variable_Name| Concise_Variable_Description| Value_Type|
+|:------------- |:--------------------|:---------|
 | "subject"      | subject no  | Integer 1-30|
-| "activity"     | activity label     |  on of {"LAYING","SITTING","STANDING","WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS"}  |
-|"tBodyAcc-mean()-X" |	|REAL NUMBER <-1,+1>|
-|"tBodyAcc-mean()-Y"| |	REAL NUMBER <-1,+1>|
-|"tBodyAcc-mean()-Z"| |	REAL NUMBER <-1,+1>|
-|"tBodyAcc-std()-X" | |	REAL NUMBER <-1,+1>|
-|"tBodyAcc-std()-Y" ||				REAL NUMBER <-1,+1>
-|"tBodyAcc-std()-Z" 	||			REAL NUMBER <-1,+1>
-|"tGravityAcc-mean()-X" ||				REAL NUMBER <-1,+1>
-|"tGravityAcc-mean()-Y" ||				REAL NUMBER <-1,+1>
-|"tGravityAcc-mean()-Z"|| 				REAL NUMBER <-1,+1>
-|"tGravityAcc-std()-X" ||				REAL NUMBER <-1,+1>
-|"tGravityAcc-std()-Y" 	||			REAL NUMBER <-1,+1>
-|"tGravityAcc-std()-Z" 	||			REAL NUMBER <-1,+1>
-|"tBodyAccJerk-mean()-X" ||			REAL NUMBER <-1,+1>
-|"tBodyAccJerk-mean()-Y"  ||			REAL NUMBER <-1,+1>
-|"tBodyAccJerk-mean()-Z"  ||			REAL NUMBER <-1,+1>
-|"tBodyAccJerk-std()-X"  ||			REAL NUMBER <-1,+1>
-|"tBodyAccJerk-std()-Y"  ||			REAL NUMBER <-1,+1>
-|"tBodyAccJerk-std()-Z"  ||			REAL NUMBER <-1,+1>
-|"tBodyGyro-mean()-X"  	||			REAL NUMBER <-1,+1>
-|"tBodyGyro-mean()-Y"  	||			REAL NUMBER <-1,+1>
-|"tBodyGyro-mean()-Z" 	 ||			REAL NUMBER <-1,+1>
-|"tBodyGyro-std()-X" 	 ||			REAL NUMBER <-1,+1>
-|"tBodyGyro-std()-Y" 	 ||			REAL NUMBER <-1,+1>
-|"tBodyGyro-std()-Z"  	||			REAL NUMBER <-1,+1>
-|"tBodyGyroJerk-mean()-X"  ||			REAL NUMBER <-1,+1>
-|"tBodyGyroJerk-mean()-Y"  ||			REAL NUMBER <-1,+1>
-|"tBodyGyroJerk-mean()-Z"  ||			REAL NUMBER <-1,+1>
-|"tBodyGyroJerk-std()-X"  ||			REAL NUMBER <-1,+1>
-|"tBodyGyroJerk-std()-Y"  ||			REAL NUMBER <-1,+1>
-|"tBodyGyroJerk-std()-Z"  ||			REAL NUMBER <-1,+1>
-|"tBodyAccMag-mean()"  	||			REAL NUMBER <-1,+1>
-|"tBodyAccMag-std()"  	||			REAL NUMBER <-1,+1>
-|"tGravityAccMag-mean()"  ||			REAL NUMBER <-1,+1>
-|"tGravityAccMag-std()"  ||			REAL NUMBER <-1,+1>
-|"tBodyAccJerkMag-mean()"  ||			REAL NUMBER <-1,+1>
-|"tBodyAccJerkMag-std()"  ||			REAL NUMBER <-1,+1>
-|"tBodyGyroMag-mean()"  ||				REAL NUMBER <-1,+1>
-|"tBodyGyroMag-std()" 	 ||			REAL NUMBER <-1,+1>
-|"tBodyGyroJerkMag-mean()"|| 	 		REAL NUMBER <-1,+1>
-|"tBodyGyroJerkMag-std()" || 			REAL NUMBER <-1,+1>
-|"fBodyAcc-mean()-X" 	 ||			REAL NUMBER <-1,+1>
-|"fBodyAcc-mean()-Y" 	 ||			REAL NUMBER <-1,+1>
-|"fBodyAcc-mean()-Z" 	 ||			REAL NUMBER <-1,+1>
-|"fBodyAcc-std()-X" 	|| 			REAL NUMBER <-1,+1>
-|"fBodyAcc-std()-Y" 	 ||			REAL NUMBER <-1,+1>
-|"fBodyAcc-std()-Z" 	 ||			REAL NUMBER <-1,+1>
-|"fBodyAcc-meanFreq()-X"  ||			REAL NUMBER <-1,+1>
-|"fBodyAcc-meanFreq()-Y"  ||			REAL NUMBER <-1,+1>
-|"fBodyAcc-meanFreq()-Z"  ||			REAL NUMBER <-1,+1>
-|"fBodyAccJerk-mean()-X"  ||			REAL NUMBER <-1,+1>
-|"fBodyAccJerk-mean()-Y" || 			REAL NUMBER <-1,+1>
-|"fBodyAccJerk-mean()-Z"  ||			REAL NUMBER <-1,+1>
-|"fBodyAccJerk-std()-X"  ||			REAL NUMBER <-1,+1>
-|"fBodyAccJerk-std()-Y"  ||			REAL NUMBER <-1,+1>
-|"fBodyAccJerk-std()-Z"  ||			REAL NUMBER <-1,+1>
-|"fBodyAccJerk-meanFreq()-X" || 			REAL NUMBER <-1,+1>
-|"fBodyAccJerk-meanFreq()-Y"||  			REAL NUMBER <-1,+1>
-|"fBodyAccJerk-meanFreq()-Z"  ||			REAL NUMBER <-1,+1>
-|"fBodyGyro-mean()-X" 	||			REAL NUMBER <-1,+1> 
-|"fBodyGyro-mean()-Y"  	||			REAL NUMBER <-1,+1>
-|"fBodyGyro-mean()-Z" 	 ||			REAL NUMBER <-1,+1>
-|"fBodyGyro-std()-X" 	 ||			REAL NUMBER <-1,+1>
-|"fBodyGyro-std()-Y"  	||			REAL NUMBER <-1,+1>
-|"fBodyGyro-std()-Z"  	||			REAL NUMBER <-1,+1>
-|"fBodyGyro-meanFreq()-X"  ||			REAL NUMBER <-1,+1>
-|"fBodyGyro-meanFreq()-Y"  ||			REAL NUMBER <-1,+1>
-|"fBodyGyro-meanFreq()-Z"  ||			REAL NUMBER <-1,+1>
-|"fBodyAccMag-mean()"  	||			REAL NUMBER <-1,+1>
-|"fBodyAccMag-std()" 	 ||			REAL NUMBER <-1,+1>
-|"fBodyAccMag-meanFreq()" ||			REAL NUMBER <-1,+1>
-|"fBodyBodyAccJerkMag-mean()"  	||		REAL NUMBER <-1,+1>
-|"fBodyBodyAccJerkMag-std()"  	||		REAL NUMBER <-1,+1>
-|"fBodyBodyAccJerkMag-meanFreq()"|| 		REAL NUMBER <-1,+1> 
-|"fBodyBodyGyroMag-mean()"  	||		REAL NUMBER <-1,+1>
-|"fBodyBodyGyroMag-std()"  	||		REAL NUMBER <-1,+1>
-|"fBodyBodyGyroMag-meanFreq()"  ||			REAL NUMBER <-1,+1>
-|"fBodyBodyGyroJerkMag-mean()"  ||			REAL NUMBER <-1,+1>
-|"fBodyBodyGyroJerkMag-std()"  	||		REAL NUMBER <-1,+1>
-|"fBodyBodyGyroJerkMag-meanFreq()" ||		REAL NUMBER <-1,+1>
+| "activity"     | activity label     |  one of { "LAYING", "SITTING", "STANDING", "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS" }  |
+|"tBodyAcc-mean()-X" | mean of body accelerometer X-axis time domain signals	|REAL NUMBER <-1,+1>|
+|"tBodyAcc-mean()-Y"| mean of body accelerometer Y-axis time domain signals |	REAL NUMBER <-1,+1>|
+|"tBodyAcc-mean()-Z"| mean of body accelerometer Z-axis time domain signals |	REAL NUMBER <-1,+1>|
+|"tBodyAcc-std()-X" | st dev of body accelerometer X-axis time domain signals |	REAL NUMBER <-1,+1>|
+|"tBodyAcc-std()-Y" | st dev of body accelerometer Y-axis time domain signals|	REAL NUMBER <-1,+1>|
+|"tBodyAcc-std()-Z" 	|st dev of body accelerometer Z-axis time domain signals|REAL NUMBER <-1,+1>|
+|"tGravityAcc-mean()-X" |mean of gravity accelerometer X-axis time domain signals|REAL NUMBER <-1,+1>|
+|"tGravityAcc-mean()-Y" |mean of gravity accelerometer Y-axis time domain signals|REAL NUMBER <-1,+1>|
+|"tGravityAcc-mean()-Z"|mean of gravity accelerometer X-axis time domain signals| REAL NUMBER <-1,+1>|
+|"tGravityAcc-std()-X" |st dev of gravity accelerometer X-axis time domain signals|REAL NUMBER <-1,+1>|
+|"tGravityAcc-std()-Y" 	|st dev of gravity accelerometer Y-axis time domain signals|REAL NUMBER <-1,+1>|
+|"tGravityAcc-std()-Z" 	|st dev of gravity accelerometer Y-axis time domain signals|REAL NUMBER <-1,+1>|
+|"tBodyAccJerk-mean()-X" |mean derivation of linear acceleration X-axis |REAL NUMBER <-1,+1>
+|"tBodyAccJerk-mean()-Y"  |mean derivation of linear acceleration Y-axis|REAL NUMBER <-1,+1>
+|"tBodyAccJerk-mean()-Z"  |mean derivation of linear acceleration X-axis|REAL NUMBER <-1,+1>
+|"tBodyAccJerk-std()-X"  |st dev derivation of linear acceleration X-axis|REAL NUMBER <-1,+1>
+|"tBodyAccJerk-std()-Y"  |st dev derivation of linear acceleration Y-axis|REAL NUMBER <-1,+1>
+|"tBodyAccJerk-std()-Z"  |st dev derivation of linear acceleration Z-axis|REAL NUMBER <-1,+1>
+|"tBodyGyro-mean()-X"  	|mean of angular velocity X-axis time domain signals|REAL NUMBER <-1,+1>
+|"tBodyGyro-mean()-Y"  	|mean of angular velocity Y-axis time domain signals|	REAL NUMBER <-1,+1>
+|"tBodyGyro-mean()-Z" 	 |mean of angular velocity X-axis time domain signals|	REAL NUMBER <-1,+1>
+|"tBodyGyro-std()-X" 	 |st dev of angular velocity X-axis time domain signals|REAL NUMBER <-1,+1>
+|"tBodyGyro-std()-Y" 	 |mean of angular velocity X-axis time domain signals|	REAL NUMBER <-1,+1>
+|"tBodyGyro-std()-Z"  	|mean of angular velocity X-axis time domain signals|	REAL NUMBER <-1,+1>
+|"tBodyGyroJerk-mean()-X"  |mean derivation of angular velocity  X-axis signals |REAL NUMBER <-1,+1>
+|"tBodyGyroJerk-mean()-Y"  |mean derivation of angular velocity  Y-axis signals|REAL NUMBER <-1,+1>
+|"tBodyGyroJerk-mean()-Z"  |mean derivation of angular velocity  Z-axis signals|REAL NUMBER <-1,+1>
+|"tBodyGyroJerk-std()-X"  |st dev derivation of angular velocity  X-axis signals|REAL NUMBER <-1,+1>
+|"tBodyGyroJerk-std()-Y"  |st dev derivation of angular velocity  X-axis signals|REAL NUMBER <-1,+1>
+|"tBodyGyroJerk-std()-Z"  |st dev derivation of angular velocity  X-axis signals|REAL NUMBER <-1,+1>
+|"tBodyAccMag-mean()"  	|mean euclidian magnitude of corresp three dim signal|	REAL NUMBER <-1,+1>
+|"tBodyAccMag-std()"  	|st dev euclidian magnitude of corresp three dim signal|REAL NUMBER <-1,+1>
+|"tGravityAccMag-mean()"  |mean euclidian magnitude of corresp three dim signal|REAL NUMBER <-1,+1>
+|"tGravityAccMag-std()"  |st dev euclidian magnitude of corresp three dim signal|REAL NUMBER <-1,+1>
+|"tBodyAccJerkMag-mean()"  |mean euclidian magnitude of corresp three dim signal|REAL NUMBER <-1,+1>
+|"tBodyAccJerkMag-std()"  |st dev euclidian magnitude of corresp three dim signal|REAL NUMBER <-1,+1>
+|"tBodyGyroMag-mean()"  |mean euclidian magnitude of corresp three dim signal|	REAL NUMBER <-1,+1>
+|"tBodyGyroMag-std()" 	 |st dev euclidian magnitude of corresp three dim signal|REAL NUMBER <-1,+1>
+|"tBodyGyroJerkMag-mean()"|mean euclidian magnitude of corresp three dim signal| REAL NUMBER <-1,+1>
+|"tBodyGyroJerkMag-std()" |st dev euclidian magnitude of corresp three dim signal| REAL NUMBER <-1,+1>
+|"fBodyAcc-mean()-X" 	 |mean F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyAcc-mean()-Y" 	 |mean F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyAcc-mean()-Z" 	 |mean F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyAcc-std()-X" 	|st dev F F transform of corresp signal| 	REAL NUMBER <-1,+1>
+|"fBodyAcc-std()-Y" 	 |st dev F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyAcc-std()-Z" 	 |st dev F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyAcc-meanFreq()-X"  |mean freq F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyAcc-meanFreq()-Y"  |mean freq F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyAcc-meanFreq()-Z"  |mean freq F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyAccJerk-mean()-X"  |mean F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyAccJerk-mean()-Y" |mean F F transform of corresp signal| 	REAL NUMBER <-1,+1>
+|"fBodyAccJerk-mean()-Z"  |mean F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyAccJerk-std()-X"  |st dev F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyAccJerk-std()-Y"  |st dev F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyAccJerk-std()-Z"  |st dev F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyAccJerk-meanFreq()-X" |mean freq F F transform of corresp signal| REAL NUMBER <-1,+1>
+|"fBodyAccJerk-meanFreq()-Y"|mean freq F F transform of corresp signal|  REAL NUMBER <-1,+1>
+|"fBodyAccJerk-meanFreq()-Z"  |mean freq F F transform of corresp signal| REAL NUMBER <-1,+1>
+|"fBodyGyro-mean()-X" 	|mean F F transform of corresp signal|	REAL NUMBER <-1,+1> 
+|"fBodyGyro-mean()-Y"  	|mean F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyGyro-mean()-Z" 	 |mean F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyGyro-std()-X" 	 |st dev F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyGyro-std()-Y"  	|st dev F F transform of corresp signal|REAL NUMBER <-1,+1>
+|"fBodyGyro-std()-Z"  	|st dev F F transform of corresp signal| REAL NUMBER <-1,+1>
+|"fBodyGyro-meanFreq()-X"  |mean freq F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyGyro-meanFreq()-Y"  |mean freq F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyGyro-meanFreq()-Z"  |mean freq F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyAccMag-mean()"  	|mean F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyAccMag-std()" 	 |st dev F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyAccMag-meanFreq()" |mean freq F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyBodyAccJerkMag-mean()"  	|mean F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyBodyAccJerkMag-std()"  	|st dev F F transform of corresp signal|REAL NUMBER <-1,+1>
+|"fBodyBodyAccJerkMag-meanFreq()"|mean freq F F transform of corresp signal| 	REAL NUMBER <-1,+1> 
+|"fBodyBodyGyroMag-mean()"  	|mean F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyBodyGyroMag-std()"  	|st dev F F transform of corresp signal|REAL NUMBER <-1,+1>
+|"fBodyBodyGyroMag-meanFreq()"  |mean freq F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyBodyGyroJerkMag-mean()"  |mean F F transform of corresp signal|	REAL NUMBER <-1,+1>
+|"fBodyBodyGyroJerkMag-std()"  	|st dev F F transform of corresp signal|REAL NUMBER <-1,+1>
+|"fBodyBodyGyroJerkMag-meanFreq()" |mean freq F F transform of corresp signal|	REAL NUMBER <-1,+1>
